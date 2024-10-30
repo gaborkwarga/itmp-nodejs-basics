@@ -1,7 +1,9 @@
 # 3. modul elméleti áttekintés és demo - Adatbázis és Prisma
 
-- Prisma és SQLite bevezetés
-- Más DB driver
+- Adatok kezelése a backendben
+- SQLite adatbázis kezelése
+- Egyéb adatbázis driver-ek használata
+- ORM-ek használata
 
 ## Prisma és SQLite bevezetés
 
