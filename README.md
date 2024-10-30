@@ -1,4 +1,4 @@
-# NodeJS és Express alapok
+# Node.js és Express alapok
 
 ## ITMP Klub képzés infotanároknak
 
@@ -17,9 +17,9 @@
 | 09:00 - 09:45   | 1. modul elméleti áttekintés és demó - Mrakovics Olivér |
 | 09:45 - 10:45   | 1. modul workshop -kiscsoportos, mentorált gyakorlat |
 | **10:45 - 11:00**   | Kávészünet                                                                |
-| **11:00 - 13:30**   | 2. modul - Ađlkalmazások dockerizálása, saját docker image készítése |
+| **11:00 - 13:30**   | 2. modul - CRUD alkalmazás létrehozása és tesztelése |
 | 11:00 - 11:30   | 2. modul elméleti áttekintés és demó - Mrakovics Olivér |
-| 11:30 - 12:30   | 2. modul workshop -kiscsoportos, mentorált gyakorlat |
+| 11:30 - 12:30   | 2. modul workshop - kiscsoportos, mentorált gyakorlat |
 | **12:30 - 13:30**   | Ebédszünet                                                                |
-| **13:30 - 14:45**   | 3. modul - A Docker Compose használata |
+| **13:30 - 14:45**   | 3. modul - Adatbázis-kezelés a backendben |
 | 13:30 - 14:00   | 3. modul elméleti áttekintés és demó - Mrakovics Olivér |
