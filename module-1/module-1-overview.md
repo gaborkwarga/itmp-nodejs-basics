@@ -1,36 +1,36 @@
-# 1. modul elméleti áttekintés - Bevezetés a NodeJS-be
+# 1. modul elméleti áttekintés - Bevezetés a Node.js-be
 
-- NodeJS és NPM alapok
+- Node.js és NPM alapok
 - NPM
 - Bevezetés a backendbe, REST
 - ExpressJS bevezetés
-- Alkalmazás futtatása NodeJS-sel
+- Alkalmazás futtatása Node.js-sel
 
-## NodeJS alapok
+## Node.js alapok
 
-- **Mi az a NodeJS?**: NodeJS egy szerveroldali JavaScript runtime környezet. Lehetővé teszi, hogy JavaScript-ben szerveroldali kódot írjunk és futtassunk, melynek köszönhetően ugyanazt a nyelvet használhatjuk frontend és backend oldalon.
+- **Mi az a Node.js?**: Node.js egy szerveroldali JavaScript runtime környezet. Lehetővé teszi, hogy JavaScript-ben szerveroldali kódot írjunk és futtassunk, melynek köszönhetően ugyanazt a nyelvet használhatjuk frontend és backend oldalon.
 
-- **NodeJS telepítése**:
+- **Node.js telepítése**:
 
-  - Telepítsük a NodeJS LTS verzióját a [https://nodejs.org/en](https://nodejs.org/en) oldalról
+  - Telepítsük a Node.js LTS verzióját a [https://nodejs.org/en](https://nodejs.org/en) oldalról
   - Ellenőrizhetjük a `node -v` paranccsal
 
-- **NodeJS felhasználási területei**: Kiemelném, hogy a NodeJS nemcsak backend REST API-k készítésére használható, hanem:
+- **Node.js felhasználási területei**: Kiemelném, hogy a Node.js nemcsak backend REST API-k készítésére használható, hanem:
 
   - Parancssori eszközök létrehozására (CLI),
   - Valós idejű alkalmazások (chat applikációk),
   - Különböző scriptek
   - Web Appok
 
-- **A kurzus fókusza: REST API backend készítés Express használatával**: Bár a NodeJS széles körben használható, ezen a kurzuson a REST API fejlesztésére koncentrálunk az Express keretrendszer segítségével. (Hogy mi az Express és a REST API, arról később)
+- **A kurzus fókusza: REST API backend készítés Express használatával**: Bár a Node.js széles körben használható, ezen a kurzuson a REST API fejlesztésére koncentrálunk az Express keretrendszer segítségével. (Hogy mi az Express és a REST API, arról később)
 
 ## NPM
 
 - **Mi az NPM?**:
 
   - Node Package Manager
-  - Az NPM a NodeJS csomagkezelője, amely segítségével más fejlesztők által írt csomagokat használhatunk újra. Ezáltal nem szükséges mindent nulláról írni.
-  - A NodeJS telepítésekor az NPM automatikusan települ
+  - Az NPM a Node.js csomagkezelője, amely segítségével más fejlesztők által írt csomagokat használhatunk újra. Ezáltal nem szükséges mindent nulláról írni.
+  - A Node.js telepítésekor az NPM automatikusan települ
 
 - **Csomagok kezelése és telepítése**:
 
@@ -57,7 +57,7 @@
 
 - **JSON**: Egy egyszerű, szöveges adatformátum, amelyet adatok strukturált tárolására és átvitelére használnak, kulcs-érték párok formájában. A REST API-k JSON formátumot használnak az adatok küldésére és fogadására, mivel könnyen olvasható, és jól támogatott a legtöbb programozási nyelvben.
 
-- **HTTP metódusok: GET, POST, PUT, DELETE**: <!-- TODO -->
+- **HTTP metódusok: GET, POST, PUT, DELETE**:
   - Ezekkel mondjuk el, hogy milyen típusú műveletet fogunk végrehajtani. Ezek határozzák meg, hogy a szerver hogyan kezelje a kéréseket az adott erőforrásokkal:
   - GET: Adatok lekérése (pl. egy felhasználó adatainak megjelenítése)
   - POST: Új adat létrehozása (pl. új felhasználó létrehozása)
@@ -67,9 +67,9 @@
 
 ## ExpressJS bevezetés
 
-- **Mi az Express?**: Az Express egy minimalista és flexibilis library, amely megkönnyíti az API-k fejlesztését NodeJS-ben. Segít a route-ok, middleware-ek, és HTTP metódusok kezelésében. A 2. modulban fogunk látni nagyobb példát.
+- **Mi az Express?**: Az Express egy minimalista és flexibilis library, amely megkönnyíti az API-k fejlesztését Node.js-ben. Segít a route-ok, middleware-ek, és HTTP metódusok kezelésében. A 2. modulban fogunk látni nagyobb példát.
 
-- **NodeJS project inicializálása**: Hozzunk létre egy mappát a számítógépünkön, majd nyissuk meg VS Code-ban, vagy valamilyen más editorban. A mappában adjuk ki az `npm init -y` parancsot.
+- **Node.js project inicializálása**: Hozzunk létre egy mappát a számítógépünkön, majd nyissuk meg VS Code-ban, vagy valamilyen más editorban. A mappában adjuk ki az `npm init -y` parancsot.
 
 - **Express telepítése NPM-mel**: A firssen inicializált projektünkben futtassuk az `npm install express` parancsot
 
@@ -88,7 +88,7 @@
   });
   ```
 
-## Alkalmazás futtatása NodeJS-sel
+## Alkalmazás futtatása Node.js-sel
 
 - `node <filename>`
 - Kiterjesztés `(.js)` elhagyható

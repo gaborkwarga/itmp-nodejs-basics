@@ -1,14 +1,14 @@
-# 1. modul workshop - NodeJS telepítése, egyszerű express project létrehozása
+# 1. modul workshop - Node.js telepítése, egyszerű express project létrehozása
 
-- NodeJS telepítése
+- Node.js telepítése
 - Projekt inicializálása
 - Express telepítése
 - Express szerver és egy GET endpoint létrehozása
 - Legenerált projektfájlok tanulmányozása
 
-## NodeJS telepítése
+## Node.js telepítése
 
-- Telepítsd a NodeJS-t [innen](https://nodejs.org/en)
+- Telepítsd a Node.js-t [innen](https://nodejs.org/en)
 - Ellenőrizd, hogy sikeresen települt-e:
   ```sh
   node -v

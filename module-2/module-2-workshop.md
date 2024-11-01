@@ -1,4 +1,4 @@
-# 2. modul workshop - NodeJS és Express CRUD alkalmazás elkészítése
+# 2. modul workshop - Node.js és Express CRUD alkalmazás elkészítése
 
 ## CRUD alkalmazás elkészítése
 
