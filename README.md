@@ -18,7 +18,7 @@ Az oktatást mentorunk, Mrakovics Olivér vezeti, aki nemcsak világbajnok webfe
 | ----------------- | -------------------------------------------------------- |
 | _09:00 - 09:15_   | _Köszöntő, technikai információk_                        |
 | **09:15 - 11:00** | **1. modul – Node telepítés, első endpoint létrehozása** |
-| 09:00 - 09:45     | 1. modul elméleti áttekintés - Mrakovics Olivér          |
+| 09:15 - 09:45     | 1. modul elméleti áttekintés - Mrakovics Olivér          |
 | 09:45 - 10:45     | 1. modul workshop - kiscsoportos, mentorált gyakorlat    |
 | _10:45 - 11:00_   | _Kávészünet_                                             |
 | **11:00 - 13:30** | **2. modul - CRUD alkalmazás létrehozása és tesztelése** |
