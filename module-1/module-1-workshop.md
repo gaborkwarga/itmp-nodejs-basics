@@ -4,16 +4,18 @@
 - Projekt inicializálása
 - Express telepítése
 - Express szerver és egy GET endpoint létrehozása
-- Legenerált projektfájlok tanulmányozása
 
 ## Node.js telepítése
 
 - Telepítsd a Node.js-t [innen](https://nodejs.org/en)
 - Ellenőrizd, hogy sikeresen települt-e:
+
   ```sh
   node -v
   npm -v
   ```
+
+- Ha nincs feltelepítve [Visual Studio Code](https://code.visualstudio.com/), akkor azt is telepítsd!
 
 ## Projekt inicializálása
 
@@ -45,7 +47,7 @@ app.listen(3000, () => {
 A kész fájlt futtasd a `node index.js` parancs segítségével. Ha mindent jól csináltál, akkor a konzolon ki lesz írva a `console.log`-ban látott üzenet.  
 Az app ezután elérhető lesz a `http://localhost:3000` címen.
 
-Próbáld értelmezni, hogy melyik sor mit csinál. Ha elakadsz, bátran fordulj a mentorodhoz!
+Próbáld értelmezni, hogy melyik sor mit csinál. Ha elakadsz, fordulj a mentorodhoz!
 
 ## Legenerált projektfájlok tanulmányozása
 
