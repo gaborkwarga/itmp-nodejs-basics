@@ -4,6 +4,12 @@
 - SQLite adatbázis telepítés, létrehozás
 - CRUD műveletek SQLite-tal
 
+> [!NOTE]  
+> **Cél:**  
+> A 2. modulból kiindulva átalakítsuk a kódot úgy, hogy minden adat SQLite adatbázisban legyen tárolva.
+
+<hr />
+
 > [!IMPORTANT]  
 > Minden szükséges SQL parancs megtalálható a [`queries.sql`](./queries.sql) fájlban.
 
@@ -22,7 +28,7 @@
     const db = new sqlite3.Database("./database.sqlite");
     ```
 - Ha a kapcsolatunk él, **szerializáljuk az adatbázist:** hozzuk létre a users táblát és insertáljunk 3 usert a már megadott tömbön végigiterálva.  
-  A `db.serialize(() => {...})` ([Doksi](https://github.com/TryGhost/node-sqlite3/wiki/Control-Flow#databaseserializecallback)) fogad paraméterben egy callback függvényt, amiben a `db.run()` ([Doksi](https://github.com/TryGhost/node-sqlite3/wiki/API#runparam---callback)) függvényeket kell majd meghívni.
+  A `db.serialize(() => {...})` ([Doksi](https://github.com/TryGhost/node-sqlite3/wiki/Control-Flow#databaseserializecallback)) fogad paraméterben egy callback függvényt, amiben a `db.run()` ([Doksi](https://github.com/TryGhost/node-sqlite3/wiki/API#runparam---callback)) függvényeket kell majd meghívni, aminek paraméterben átadjuk az SQL parancsokat.
 
 <details>
 <summary>Nyiss le a megoldásért!</summary>
@@ -81,8 +87,6 @@ db.serialize(() => {
 
 Módosítsd a meglévő kódot úgy, hogy minden endpoint adatbázist használjon! Figyelj arra, hogy a funkcionalitás ne változzon!
 
-- A megoldást a [`/module-3/workshop-solution`](./workshop-solution/) mappában találod.
-
 <details>
 <summary>Nyiss le segítségért!</summary>
 
@@ -131,3 +135,7 @@ db.run("INSERT INTO table (field1) VALUES (?)", [field1Value], function (err) {
 ```
 
 </details>
+
+<br />
+
+A megoldást a [`/module-3/workshop-solution`](./workshop-solution/) mappában találod.

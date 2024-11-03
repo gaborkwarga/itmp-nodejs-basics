@@ -8,9 +8,9 @@
 
 ## Adatok kezelése a backendben
 
-- **Miért van szükség adatbázisra?**: Az adatbázisok biztosítják az alkalmazásban használt adatok tartós tárolását. Gondoljunk például egy felhasználói nyilvántartásra: egy blog rendszernek, webshopnak vagy admin felületnek mind szüksége van egy stabil helyre, ahol a felhasználói és termékadatokat tárolhatja.
+- **Miért van szükség adatbázisra?**: Az adatbázisok biztosítják az alkalmazásban használt adatok tartós tárolását.
 
-- **Adatbázis integráció a backendünkbe**: A backend szerepe, hogy a kliens kérésére adatokat biztosítson, feldolgozzon vagy módosítson. Az Express-hez adatbázis kapcsolódást építünk ki, hogy a felhasználók kérései által létrehozott vagy módosított adatokat elmenthessük és feldolgozhassuk az adatbázisban. Az API-n keresztül történő kommunikáció révén biztonságosan érhetjük el és kezelhetjük az adatokat.
+- **Adatbázis integráció a backendünkbe**: A backend szerepe, hogy a kliens kérésére adatokat biztosítson, feldolgozzon vagy módosítson. Az Express-hez adatbázis kapcsolódást azért építünk ki, hogy a felhasználók kérései által létrehozott vagy módosított adatokat elmenthessük és feldolgozhassuk az adatbázisban. Az API-n keresztül történő kommunikáció révén biztonságosan érhetjük el és kezelhetjük az adatokat.
 
 ## SQLite adatbázis kezelése
 

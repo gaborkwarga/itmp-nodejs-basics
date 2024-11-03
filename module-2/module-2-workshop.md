@@ -3,6 +3,12 @@
 - A bemutatott CRUD alkalmazás elkészítése
 - Az elkészített API tesztelése a Thunder Client bővítménnyel
 
+> [!NOTE]  
+> **Cél:**  
+> Az 1. modulból kiindulva hozzuk létre a lent definiált CRUD endpointokat, amik felhasználókat kezelnek. Az adatokat tároljuk memóriában egy tömbben, és JavaScript függvényekkel manipuláljuk őket. A Thunder Client VS Code bővítménnyel teszteljük a végpontokat.
+
+<hr />
+
 ## CRUD alkalmazás elkészítése
 
 Készítsd el a 2. modulban elkészített CRUD alkalmazást!

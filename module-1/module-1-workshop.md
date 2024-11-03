@@ -5,6 +5,12 @@
 - Express telepítése
 - Express szerver és egy GET endpoint létrehozása
 
+> [!NOTE]  
+> **Cél:**  
+> Minden szükséges eszköz telepítve legyen a számítógépen: Node.js, NPM, Visual Studio Code. Legyen létrehozva egy Node.js projekt, az express telepítve legyen. Értenünk kell egy Node.js projekt felépítését, valamint azt, hogy milyen fájlokat tartalmaz. Ismerkedjünk az express-szel, egy egyszerű GET endpointot és hozzunk létre.
+
+<hr />
+
 ## Node.js telepítése
 
 - Telepítsd a Node.js-t [innen](https://nodejs.org/en)
