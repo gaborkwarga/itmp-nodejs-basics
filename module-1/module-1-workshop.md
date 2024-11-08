@@ -41,14 +41,23 @@ Készíts egy index.js fájlt a következő tartalommal:
 const express = require("express");
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
+app.get("/itmp", (req, res) => {
+  res.send("Hello ITMP!");
 });
 
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });
 ```
+
+Hozz még létre további **2** endpointot az alábbiak szerint:
+
+- `/nodejs`
+  - Visszaadja a egy mondatban azt, hogy mi az a Node.js.
+- `/express`
+  - Visszaadja egy mondatban azt, hogy mi az az Express.
+
+<br/>
 
 A kész fájlt futtasd a `node index.js` parancs segítségével. Ha mindent jól csináltál, akkor a konzolon ki lesz írva a `console.log`-ban látott üzenet.  
 Az app ezután elérhető lesz a `http://localhost:3000` címen.
@@ -58,3 +67,18 @@ Próbáld értelmezni, hogy melyik sor mit csinál. Ha elakadsz, fordulj a mento
 ## Legenerált projektfájlok tanulmányozása
 
 Az `npm init` valamint az `npm install` parancsok legeneráltak nekünk mindenféle fájlokat és mappákat (`package.json`, `pacakge-lock.json`, `node_modules`). Nézd meg és tanulmányozd ezeket az állományokat. Gondold végig, hogy az egyes állományoknak mi a szerepe. Ha valamiben nem vagy biztos, akkor kérd a mentorod segítségét!
+
+## BÓNUSZ
+
+A [`/module-1/assets/index.html`](./assets/index.html) elérési úton találsz egy `index.html` fájlt. Ezt a fájlt szolgáld ki express segítségével!  
+A projektedben készíts egy `public` mappát, amibe másold bele ezt az `index.html`-t. A fájl tartalmán ne módosíts!
+
+Ha ez megvan, a legelső endpoint felé másold be az alábbi sort:
+
+```js
+app.use("/", express.static("public"));
+```
+
+Indítsd újra az Express szervert, majd teszteld úgy, hogy a [http://localhost:3000/index.html](http://localhost:3000/index.html) URL-re navigálsz.
+
+Tanulmányozd ezt az `index.html` fájlt, hogy hogyan fetch-eli le a szerverről az endpointokat!
