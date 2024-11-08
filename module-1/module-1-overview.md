@@ -139,6 +139,29 @@ A package-lock.json-nal és a node_modules-szal pedig szinte soha nem kell fogla
   - DELETE: Adat törlése (pl. felhasználó törlése)
   - A REST-ben kulcsszerepet játszanak, hiszen a REST API-kat úgy tervezik, hogy ezekkel a szabványos HTTP metódusokkal vezéreljék az adatkezelést, így egyszerű, érthető és szabványosított felületeket kínálnak a kliens-szerver kommunikációhoz.
 
+## ExpressJS bevezetés
+
+- **Mi az Express?**: Az Express egy minimalista és flexibilis library, amely megkönnyíti az API-k fejlesztését Node.js-ben. Segít a route-ok, middleware-ek, és HTTP metódusok kezelésében. A 2. modulban fogunk látni nagyobb példát.
+
+- **Node.js project inicializálása**: Hozzunk létre egy mappát a számítógépünkön, majd nyissuk meg VS Code-ban, vagy valamilyen más editorban. A mappában adjuk ki az `npm init -y` parancsot.
+
+- **Express telepítése NPM-mel**: A firssen inicializált projektünkben futtassuk az `npm install express` parancsot
+
+- **Express szerver létrehozása**: Hozzunk létre egy index.js fájlt, aminek a tartalma legyen a következő:
+
+  ```js
+  const express = require("express");
+  const app = express();
+
+  app.get("/", (req, res) => {
+    res.send("Hello ITMP!");
+  });
+
+  app.listen(3000, () => {
+    console.log("Server is running on port 3000");
+  });
+  ```
+
 ## CORS
 
 - **Mi az a CORS (Cross-Origin Resource Sharing)?**: A CORS egy mechanizmus, amely lehetővé teszi, hogy az egyik domainről érkező JavaScript kód másik domainen lévő erőforrásokhoz férjen hozzá. Például, ha egy frontend alkalmazás (pl. http://localhost:3000) adatokat kér egy backend API-ból (http://localhost:5000), akkor a CORS-nak megfelelően kell konfigurálni a backend-et.
@@ -165,29 +188,6 @@ A package-lock.json-nal és a node_modules-szal pedig szinte soha nem kell fogla
       })
     );
     ```
-
-## ExpressJS bevezetés
-
-- **Mi az Express?**: Az Express egy minimalista és flexibilis library, amely megkönnyíti az API-k fejlesztését Node.js-ben. Segít a route-ok, middleware-ek, és HTTP metódusok kezelésében. A 2. modulban fogunk látni nagyobb példát.
-
-- **Node.js project inicializálása**: Hozzunk létre egy mappát a számítógépünkön, majd nyissuk meg VS Code-ban, vagy valamilyen más editorban. A mappában adjuk ki az `npm init -y` parancsot.
-
-- **Express telepítése NPM-mel**: A firssen inicializált projektünkben futtassuk az `npm install express` parancsot
-
-- **Express szerver létrehozása**: Hozzunk létre egy index.js fájlt, aminek a tartalma legyen a következő:
-
-  ```js
-  const express = require("express");
-  const app = express();
-
-  app.get("/", (req, res) => {
-    res.send("Hello ITMP!");
-  });
-
-  app.listen(3000, () => {
-    console.log("Server is running on port 3000");
-  });
-  ```
 
 ## Alkalmazás futtatása Node.js-sel
 
