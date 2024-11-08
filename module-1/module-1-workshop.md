@@ -73,12 +73,12 @@ Az `npm init` valamint az `npm install` parancsok legeneráltak nekünk mindenf�
 A [`/module-1/assets/index.html`](./assets/index.html) elérési úton találsz egy `index.html` fájlt. Ezt a fájlt szolgáld ki express segítségével!  
 A projektedben készíts egy `public` mappát, amibe másold bele ezt az `index.html`-t. A fájl tartalmán ne módosíts!
 
-Ha ez megvan, a legelső endpoint felé másold be az alábbi sort:
+Ha ez megvan, a legelső endpoint elé másold be az alábbi sort:
 
 ```js
 app.use("/", express.static("public"));
 ```
 
-Indítsd újra az Express szervert, majd teszteld úgy, hogy a [http://localhost:3000/index.html](http://localhost:3000/index.html) URL-re navigálsz.
+Indítsd újra az Express szervert, majd teszteld úgy, hogy a [http://localhost:3000/](http://localhost:3000/) URL-re navigálsz.
 
 Tanulmányozd ezt az `index.html` fájlt, hogy hogyan fetch-eli le a szerverről az endpointokat!

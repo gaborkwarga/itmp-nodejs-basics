@@ -3,6 +3,7 @@
 - Node.js és NPM alapok
 - NPM
 - Bevezetés a backendbe, REST
+- CORS
 - ExpressJS bevezetés
 - Alkalmazás futtatása Node.js-sel
 
@@ -137,6 +138,33 @@ A package-lock.json-nal és a node_modules-szal pedig szinte soha nem kell fogla
   - PUT: Létező adat módosítása (pl. felhasználó adatainak szerkesztése)
   - DELETE: Adat törlése (pl. felhasználó törlése)
   - A REST-ben kulcsszerepet játszanak, hiszen a REST API-kat úgy tervezik, hogy ezekkel a szabványos HTTP metódusokkal vezéreljék az adatkezelést, így egyszerű, érthető és szabványosított felületeket kínálnak a kliens-szerver kommunikációhoz.
+
+## CORS
+
+- **Mi az a CORS (Cross-Origin Resource Sharing)?**: A CORS egy mechanizmus, amely lehetővé teszi, hogy az egyik domainről érkező JavaScript kód másik domainen lévő erőforrásokhoz férjen hozzá. Például, ha egy frontend alkalmazás (pl. http://localhost:3000) adatokat kér egy backend API-ból (http://localhost:5000), akkor a CORS-nak megfelelően kell konfigurálni a backend-et.
+
+- **Miért van korlátozva a cross-origin hozzáférés?**: A böngészők alapértelmezésben blokkolják a cross-origin kéréseket, hogy megvédjék a felhasználókat az esetleges biztonsági problémáktól, például a CSRF támadásoktól. Ezek a támadások kihasználhatják, hogy a webalkalmazások különböző forrásokból kérnek erőforrásokat.
+
+- **CORS beállítása Express-ben**:
+
+  - Az Express-ben egy egyszerű mód a CORS engedélyezésére a cors csomag használata. A csomag telepítése: `npm i cors`
+  - Miután telepítettük, hozzá kell adnunk middleware-ként:
+  - ```js
+    const express = require("express");
+    const cors = require("cors");
+    const app = express();
+
+    app.use(cors());
+    ```
+
+  - Finomhangolás: A `cors()` middleware paraméterekkel beállítható, hogy mely domainek férhetnek hozzá az API-hoz. Példa:
+  - ```js
+    app.use(
+      cors({
+        origin: "http://localhost:3000",
+      })
+    );
+    ```
 
 ## ExpressJS bevezetés
 
