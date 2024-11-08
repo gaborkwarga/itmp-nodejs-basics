@@ -7,13 +7,13 @@ app.get("/itmp", (req, res) => {
 
 app.get("/nodejs", (req, res) => {
   res.send(
-    "Fogalmazd meg a saját szavaiddal, hogy mi az a Node.js és mire használható!"
+    "A Node.js egy olyan szerveroldali JavaScript futtatókörnyezet, amely a V8 JavaScript motorra épül."
   );
 });
 
 app.get("/express", (req, res) => {
   res.send(
-    "Fogalmazd meg a saját szavaiddal, hogy mi az az Express.js és mire használható!"
+    "Az Express egy minimalista webes keretrendszer, amely a Node.js-hez készült."
   );
 });
 

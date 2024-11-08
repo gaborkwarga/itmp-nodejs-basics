@@ -53,9 +53,9 @@ app.listen(3000, () => {
 Hozz még létre további **2** endpointot az alábbiak szerint:
 
 - `/nodejs`
-  - Visszaadja a egy mondatban azt, hogy mi az a Node.js.
+  - Visszaad egy stringet: `"A Node.js egy olyan szerveroldali JavaScript futtatókörnyezet, amely a V8 JavaScript motorra épül."`
 - `/express`
-  - Visszaadja egy mondatban azt, hogy mi az az Express.
+  - Visszaad egy stringet: `"Az Express egy minimalista webes keretrendszer, amely a Node.js-hez készült."`
 
 <br/>
 
